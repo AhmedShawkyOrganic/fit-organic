@@ -1,0 +1,84 @@
+
+<html lang="en" dir="ltr">
+<head>
+<title>Basic 90</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<link rel="stylesheet" href="styles/styles.css" type="text/css">
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+  <%- include('./partials/header'); -%>
+  
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <!-- Slider -->
+    <section id="slider" class="clear">
+      <figure>
+        <figcaption>
+          <h2>Orders</h2>
+          <p>A quick overview of the status do the orders at the moment </p>
+          <footer class="more"><a href="">Read More &raquo;</a></footer>
+        </figcaption>
+      </figure>
+      <article class="two_quarter">
+        <figure>
+          <figcaption2>
+            <linee></linee>
+            <cont>
+              <h1>Pending Orders:</h1>
+              <h2>00</h2>
+            </cont>
+            <linee></linee>
+            <cont>
+              <h1>Ready Orders:</h1>
+              <h2>00</h2>
+            </cont>
+            <linee></linee>
+            <cont>
+              <h1>Canclled Orders:</h1>
+              <h2>00</h2>
+            </cont>
+            <linee></linee>
+          </figcaption2>
+        </figure>
+      </article>
+    </section>
+    <!-- main content -->
+    <div id="intro">
+      <section class="clear">
+        <!-- article 1 -->
+        <article class="two_quarter">
+          <h2>Overview of Products/Prices</h2>
+          <p>A quick overview of the current prices</p>
+        </article>
+        <!-- article 2 -->
+        <article class="two_quarter lastbox">
+          <figure>
+            <ul class="clear">
+              <h1>Price: </h1>
+              <p2>00</p2>
+              <li><a href=""><img src="images/demo/130x130.gif" width="130" height="130" alt=""></a></li>
+              <h1>Price: </h1>
+              <li><a href=""><img src="images/demo/130x130.gif" width="130" height="130" alt=""></a></li>
+              <h1>Price: </h1>
+              <li class="last"><a href=""><img src="images/demo/130x130.gif" width="130" height="130" alt=""></a></li>
+            </ul>
+            <figcaption><a href="">View More In The Inventory &raquo;</a></figcaption>
+          </figure>
+        </article>
+      </section>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    
+    <!-- / content body -->
+  </div>
+</div>
+<!-- Footer -->
+<%- include('./partials/footer'); -%>
+
+</html>

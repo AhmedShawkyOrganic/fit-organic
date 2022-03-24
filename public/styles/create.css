@@ -1,0 +1,517 @@
+/*--
+    Author: W3layouts
+    Author URL: http://w3layouts.com
+    License: Creative Commons Attribution 3.0 Unported
+    License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+
+
+/*-- Reset Code --*/
+
+	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+	article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+	ol,ul{list-style:none;padding:0;margin:0;}
+	blockquote,q{quotes:none;}
+	blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+	table{border-collapse:collapse;border-spacing:0;}
+	/* start editing from here */
+	a{text-decoration:none;}
+	.txt-rt{text-align:right;}/* text align right */
+	.txt-lt{text-align:left;}/* text align left */
+	.txt-center{text-align:center;}/* text align center */
+	.float-rt{float:right;}/* float right */
+	.float-lt{float:left;}/* float left */
+	.clear{clear:both;}/* clear float */
+	.pos-relative{position:relative;}/* Position Relative */
+	.pos-absolute{position:absolute;}/* Position Absolute */
+	.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+	.vertical-top{	vertical-align:top;}/* vertical align top */
+	.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
+	nav.vertical ul li{	display:block;}/* vertical menu */
+	nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+	img{max-width:100%;}
+	/*img[width],img[height]{width:auto;height:auto;} wordpress hack to reset the attributes (while making responsive) */
+
+/*-- Reset Code --*/
+#hidden_div {
+    display: none;
+}
+
+/*-- Index-Page-Styling --*/
+
+body {
+    background-color: #00405d;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration: none;
+}
+
+input[type="button"], input[type="submit"] {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 50px auto;
+    letter-spacing: 3px;
+}
+
+.container {
+    width: 30%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    padding: 30px;
+}
+
+.contact label {
+    color: #F96D6E;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.contact input[type="text"], .contact input[type="email"], .contact textarea {
+    width: 94.5%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    outline: none;
+    color: #000;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact textarea {
+    height: 100px;
+}
+
+.contact ::-webkit-input-placeholder {
+    color: #666;
+}
+
+.contact ::-moz-placeholder {
+    color: #666;
+}
+
+.contact ::-moz-placeholder {
+    color: #666;
+}
+
+.contact ::-ms-input-placeholder {
+    color: #666;
+}
+
+.send-button input[type="submit"] {
+    padding: 10px 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    color: #FFF;
+    background-color: #009688;
+    cursor: pointer;
+}
+
+.send-button input[type="submit"]:hover {
+    background-color: #F96D6E;
+}
+
+.footer {
+    margin: 50px 20px 30px;
+}
+
+.footer p a {
+    color: #FFF;
+}
+
+.footer p {
+    line-height: 30px;
+}
+
+.footer p a:hover {
+    color: #F96D6E;
+}
+
+/*-- Index-Page-Styling --*/
+
+
+
+
+
+/*--- Responsive Code ---*/
+
+@media screen and (max-width: 1920px) {
+    h1 {
+        margin: 75px auto;
+    }
+    .container {
+        width: 25%;
+    }
+    .footer {
+        margin-top: 75px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    h1 {
+        margin: 50px auto;
+    }
+    .container {
+        width: 30%;
+    }
+    .footer {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1367px) {
+    .container {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 966px) {
+    h1 {
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 853px) {
+    .container {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    h1 {
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 603px) {
+    .container {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    h1 {
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 35px;
+        margin: 40px 0;
+    }
+    .container {
+        width: 75%;
+    }
+    .contact input[type="text"], .contact input[type="email"], .contact textarea {
+        width: 93%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    h1 {
+        font-size: 30px;
+        margin: 30px 0;
+    }
+    .contact label {
+        font-size: 13px;
+    }
+    .contact input[type="text"], .contact input[type="email"], .contact textarea {
+        width: 91.5%;
+        font-size: 12px;
+        margin: 5px 0 15px;
+    }
+    .footer p {
+        line-height: 25px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .container {
+        width: 85%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 25px;
+    }
+    .container {
+        padding: 10px;
+    }
+}
+select {
+
+    /* styling */
+    background-color: white;
+    border: thin solid blue;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+  
+    /* reset */
+  
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  
+  /* arrows */
+  
+  select.classic {
+    background-image:
+      linear-gradient(45deg, transparent 50%, blue 50%),
+      linear-gradient(135deg, blue 50%, transparent 50%),
+      linear-gradient(to right, skyblue, skyblue);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px,
+      2.5em 2.5em;
+    background-repeat: no-repeat;
+  }
+  
+  select.classic:focus {
+    background-image:
+      linear-gradient(45deg, white 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, white 50%),
+      linear-gradient(to right, gray, gray);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px,
+      2.5em 2.5em;
+    background-repeat: no-repeat;
+    border-color: grey;
+    outline: 0;
+  }
+  
+  
+  
+  
+  select.round {
+    background-image:
+      linear-gradient(45deg, transparent 50%, gray 50%),
+      linear-gradient(135deg, gray 50%, transparent 50%),
+      radial-gradient(#ddd 70%, transparent 72%);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      calc(100% - .5em) .5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1.5em 1.5em;
+    background-repeat: no-repeat;
+  }
+  
+  select.round:focus {
+    background-image:
+      linear-gradient(45deg, white 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, white 50%),
+      radial-gradient(gray 70%, transparent 72%);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      calc(100% - .5em) .5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1.5em 1.5em;
+    background-repeat: no-repeat;
+    border-color: green;
+    outline: 0;
+  }
+  
+  
+  
+  
+  
+  select.minimal {
+    background-image:
+      linear-gradient(45deg, transparent 50%, gray 50%),
+      linear-gradient(135deg, gray 50%, transparent 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+  }
+  
+  select.minimal:focus {
+    background-image:
+      linear-gradient(45deg, green 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, green 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: green;
+    outline: 0;
+  }
+  
+  
+  select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+
+  h1 {
+    color: white;
+    line-height: 120%;
+    margin: 0 auto 2rem auto;
+    max-width: 30rem;
+  }
+
+
+  .quantity {
+    position: relative;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  
+  .quantity input {
+    width: 45px;
+    height: 42px;
+    line-height: 1.65;
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    border: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+  
+  .quantity input:focus {
+    outline: 0;
+  }
+  
+  .quantity-nav {
+    float: left;
+    position: relative;
+    height: 42px;
+  }
+  
+  .quantity-button {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    width: 21px;
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+    font-family: "FontAwesome" !important;
+    line-height: 1.5;
+    padding: 0;
+    background: #b83333;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  
+  .quantity-button:active {
+    background: #4b4b4b;
+  }
+  
+  .quantity-button.quantity-up {
+    position: absolute;
+    height: 50%;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    font-family: "FontAwesome";
+    border-radius: 0 4px 0 0;
+    line-height: 1.6
+  }
+  
+  .quantity-button.quantity-down {
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    font-family: "FontAwesome";
+    border-radius: 0 0 4px 0;
+  }
+
+
+  
+/*--- Responsive Code ---*/

@@ -1,0 +1,147 @@
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Basic 90</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/layout.css" type="text/css">
+  <link rel="stylesheet" href="styles/styles.css" type="text/css">
+  <link rel="stylesheet" href="styles/prices.css" type="text/css">
+  <link rel="stylesheet" href="styles/orders.css" type="text/css">
+  <link rel="stylesheet" href="styles/orders2.css" type="text/css">
+  <link rel="stylesheet" href="styles/orders3.css" type="text/css">
+  <!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+
+<body>
+  <!-- Header -->
+  <%- include('./partials/header'); -%>
+
+    <!-- Body -->
+        <div class="subforum">
+          <a href = "/orders/create">
+            <button type="button" class="btn btn-cyan btn-sm">Add Order</button>
+          </a>
+          <!--Pending Oders_____________ -->
+          <div class="subforum-title">
+            <h1>Pending Orders</h1>
+          </div>
+          <% if (orP.length> 0) { %>
+            <% orP.forEach(orP=> { %>
+              <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                  <img src="images/Pen.png" width="90px" height="90px"/>
+                  <i class="fa fa-car center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                  <h4><a href="/orders/<%= orP._id %>">Num # <%= orP.orderNum%></a></h4>
+                  <h1>بيض ابيض: <%= orP.eggW%></>
+                  <h1>بيض احمر: <%= orP.eggR%></h1>
+                  <h1>بيض بلدي: <%= orP.eggB%></h1>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                  <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                  <b><a href="">Last post</a></b> by <a href=""><%=orP.user  %></a>
+                  <br>on <small>Date: <%= orP.published %></small>
+                </div>
+              </div>
+
+              <% }) %>
+                <% } else { %>
+                  <h1>There are no Reports to display...</h1>
+                  <% } %>
+                    <!--Ready Oders_____________ -->
+          <div class="subforum-title">
+            <h1>Ready Orders</h1>
+          </div>
+          <% if (orR.length> 0) { %>
+            <% orR.forEach(orR=> { %>
+              <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                  <img src="images/Rea.png" width="90px" height="90px"/>
+                  <i class="fa fa-car center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                  <h4><a href="/orders/<%= orR._id %>">Num # <%= orR.orderNum%></a></h4>
+                  <h1>بيض ابيض: <%= orR.eggW%></h1>
+                  <h1>بيض احمر: <%= orR.eggR%></h1>
+                  <h1>بيض بلدي: <%= orR.eggB%></h1>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                  <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                  <b><a href="">Last post</a></b> by <a href=""><%=orR.user  %></a>
+                  <br>on <small>Date: <%= orR.published %></small>
+                </div>
+              </div>
+
+              <% }) %>
+                <% } else { %>
+                  <h1>There are no Reports to display...</h1>
+                  <% } %>
+                    <!--Completed Oders_____________ -->
+          <div class="subforum-title">
+            <h1>Completed Orders</h1>
+          </div>
+          <% if (orCo.length> 0) { %>
+            <% orCo.forEach(orCo=> { %>
+              <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                  <img src="images/Com.png" width="90px" height="90px"/>
+                  <i class="fa fa-car center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                  <h4><a href="/orders/<%= orCo._id %>">Num # <%= orCo.orderNum%></a></h4>
+                  <h1>بيض ابيض: <%= orCo.eggW%></h1>
+                  <h1>بيض احمر: <%= orCo.eggR%></h1>
+                  <h1>بيض بلدي: <%= orCo.eggB%></h1>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                  <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                  <b><a href="">Last post</a></b> by <a href=""><%=orCo.user  %></a>
+                  <br>on <small>Date: <%= orCo.published %></small>
+                </div>
+              </div>
+
+              <% }) %>
+                <% } else { %>
+                  <h1>There are no Reports to display...</h1>
+                  <% } %>
+                    <!--Canclled Oders_____________ -->
+          <div class="subforum-title">
+            <h1>Canclled Orders</h1>
+          </div>
+          <% if (orCa.length> 0) { %>
+            <% orCa.forEach(orCa=> { %>
+              <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                  <img src="images/Can.png" width="90px" height="90px"/>
+                  <i class="fa fa-car center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                  <h4><a href="/orders/<%= orCa._id %>">Num # <%= orCa.orderNum%></a></h4>
+                  <h1>بيض ابيض: <%= orCa.eggW%></h1>
+                  <h1>بيض احمر: <%= orCa.eggR%></h1>
+                  <h1>بيض بلدي: <%= orCa.eggB%></h1>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                  <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                  <b><a href="">Last post</a></b> by <a href=""><%=orCa.user  %></a>
+                  <br>on <small>Date: <%= orCa.published %></small>
+                </div>
+              </div>
+
+              <% }) %>
+                <% } else { %>
+                  <h1>There are no Reports to display...</h1>
+                  <% } %>
+
+        </div>
+    <!-- Fotter -->
+    <%- include('./partials/footer'); -%>

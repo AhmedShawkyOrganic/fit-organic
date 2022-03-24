@@ -1,0 +1,22 @@
+        <% if (orCo.length > 0) { %>
+          <% orCo.forEach(orCo => { %>
+            
+            <a class="card" href="/orders/<%= orCo._id %>">
+              <div class="d-flex flex-row comment-row">
+                <div class="p-2">
+                </div>
+                <div class="comment-text w-100">
+                  <h6 class="font-medium">OrderNum: <%=orCo.orderNum%></h6>
+                  <span class="m-b-15 d-block">Great industry leaders are not the real heroes of stock market. </span>
+                  <div class="comment-footer"> <span class="text-muted float-right">August 1, 2019</span>
+                    <button type="button" class="btn btn-cyan btn-sm">Edit</button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          <% }) %>
+        <% } else { %>
+          <p>There are no Reports to display...</p> 
+        <% } %>
+      </div>  
+        

@@ -1,0 +1,66 @@
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Basic 90</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles/layout.css" type="text/css">
+  <link rel="stylesheet" href="../styles/styles.css" type="text/css">
+  <link rel="stylesheet" href="../styles/create.css" type="text/css" media="all" />
+  <!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+
+<body>
+  <!-- Header -->
+  <%- include('./partials/header'); -%> 
+
+	<!-- Web-Fonts -->
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" 	type="text/css"  media="all">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700,800" 		type="text/css"  media="all">
+	<!-- //Web-Fonts -->
+
+  <script>
+    function showDiv(divId, element)
+{
+    document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
+}
+  </script>
+</head>
+<body>
+	<div class="container">
+
+		<div class="contact">
+			<form action="#" method="post">
+				<h1>OrderNum: #</h1>
+				<label>Customer Phone number</label>
+				<input type="text" Name="Phone Number" placeholder="Customer Phone Number" required="true">
+        <br></br>
+        <label>بيض ابيص</label>
+        <div class="quantity">
+          <input type="number" min="1" max="9" step="1" value="1">
+        </div>
+        <br></br>
+        <label>Adress Option</label>
+          <select class="minimal" id="test" name="form_select" onchange="showDiv('hidden_div', this)">
+            <option value="0"> No</option>
+            <option value="1"> Yes</option>
+       </select>
+       <br></br>
+        <div id="hidden_div">
+          <label>Adress</label>
+          <textarea name="Message" placeholder="Adress" required="false"></textarea>
+          <label>Adress Fees</label>
+          <input type="text" Name="Phone Number" placeholder="000.00egp" required="true">
+        </div>
+				<div class="send-button">
+					<input type="submit" value="Send">
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body>
+<!-- //Body -->
+
+
+<%- include('./partials/footer'); -%>
+</html>

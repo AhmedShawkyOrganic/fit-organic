@@ -1,0 +1,13 @@
+
+    q1{
+      font-size: 20px;
+      color:#8C5E58;
+    }
+  #content {
+      position: relative;
+  }
+  #content img {
+      position: absolute;
+      top: -120px;
+      left: -260px;
+  }

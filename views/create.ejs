@@ -1,0 +1,172 @@
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Basic 90</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles/layout.css" type="text/css">
+  <link rel="stylesheet" href="../styles/styles.css" type="text/css">
+  <link rel="stylesheet" href="../styles/create.css" type="text/css" media="all" />
+  <!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+
+<body>
+  <!-- Header -->
+  <%- include('./partials/header'); -%>
+
+    <head>
+      <title>Item Order Form Responsive Widget Template :: w3layouts</title>
+      <!-- Meta tag Keywords -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8" />
+      <meta name="keywords"
+        content="Item Order Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+      <script>
+        addEventListener("load", function () {
+          setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+          window.scrollTo(0, 1);
+        }
+      </script>
+            <script language="javascript" type="text/javascript">
+              function limitText(limitField, limitNum) {
+                  if (limitField.value.length > limitNum) {
+                      limitField.value = limitField.value.substring(0, limitNum);
+                  }
+              }
+              </script>
+
+      <!-- Meta tag Keywords -->
+      <!-- css files -->
+      <link rel="stylesheet" href="../styles/create2.css" type="text/css" media="all" />
+      <!-- Style-CSS -->
+      <!-- Font-Awesome-Icons-CSS -->
+      <!-- //css files -->
+      <!-- web-fonts -->
+      <link href="//fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
+      <!-- //web-fonts -->
+    </head>
+
+    <body>
+      <!-- title -->
+      <h1 class="header-w3ls">OrderNum: <%= maxV +1 %> </h1>
+      <!-- //title -->
+      <!-- content -->
+      <div class="porduct-order-agile">
+        <form action="/orders" method="POST">
+
+          <input type="hidden" id="orderNum" name="orderNum" readonly>
+          <input type="hidden" id="eggWop" name="eggWop" readonly>
+          <input type="hidden" id="eggBop" name="eggBop" readonly>
+          <input type="hidden" id="eggRop" name="eggRop" readonly>
+
+          <div class="form-group">
+            <p>Customer's Name</p>
+            <input type="text" id="name" name="name" placeholder="Abo Eid" required="True">
+          </div>
+          <div class="form-group">
+            <p>Customer's Phone</p>
+            <input type="Number" id="number" name="number" placeholder="010xxxxxxxx" required="True" onKeyDown="limitText(this,11)" 
+            onKeyUp="limitText(this,11)" >
+          </div>
+
+          <div class="main">
+            <div class="form-left-to-w3l">
+              <p>بيض احمر</p>
+              <input type="number" id="eggR" name="eggR" placeholder="00" oninput="getPrice()">
+            </div>
+            <div class="form-left-to-w3l">
+              <p>بيض ابيض</p>
+              <input type="number" id="eggW" name="eggW" placeholder="00" oninput="getPrice()">
+            </div>
+          </div>
+          <div class="main">
+            <div class="form-left-to-w3l">
+              <p>بيض بلدي</p>
+              <input type="number" id="eggB" name="eggB" placeholder="00" oninput="getPrice()">
+            </div>
+          </div>
+
+          <div class="main">
+            <div class="form-left-to-w3l">
+              <p>Status</p>
+              <select type="text" id="status" name="status" class="form-control buttom">
+                <option value="Pending">Pending
+                </option>
+                <option value="Ready">Ready</option>
+                <option value="Completed">Completed</option>
+                <option value="Cancelled">Cancelled</option>
+              </select>
+            </div>
+          </div>
+          <div class="main">
+            <div class="form-left-to-w3l">
+              <p>Order By User</p>
+              <select type="text" id="user" name="user" class="form-control buttom">
+                <option value="Eid">Eid
+                </option>
+                <option value="Shawky">Shawky</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <p>Deleviry Option</p>
+            <select class="minimal" id="test" name="form_select" onchange="showDiv('hidden_div', this)">
+              <option value="0"> No</option>
+              <option value="1"> Yes</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div id="hidden_div">
+              <p>Adress</p>
+              <input type="text" id="adress" name="adress" placeholder="el tagamo3 el 5ames,share3:xxxx,xxx">
+              <p>Deleviry Fees</p>
+              <input type="number" id="dFees" name="dFees" placeholder="Egp 20" oninput="getPrice()">
+            </div>
+          </div>
+          <div class="main">
+            <div class="form-left-to-w3l">
+            </div>
+            <div class="form-left-to-w3l">
+              <p>Price</p>
+              <input type="number" id="prices" name="prices" placeholder="00" readonly>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <% var test=maxV+1 %>
+      <% var eggWp = prices.eggWp%>
+      <% var eggRp = prices.eggRp%>
+      <% var eggBp = prices.eggBp%>
+        <script>
+          var getTest = "<%= test  %>";
+          var geteggWp= "<%= eggWp  %>";
+          var geteggRp= "<%= eggRp  %>";
+          var geteggBp= "<%= eggBp  %>";
+          function showDiv(divId, element) {
+            document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
+          }
+          function getPrice(){
+            var eggWP = document.getElementById('eggW').value
+            var eggRP = document.getElementById('eggR').value
+            var eggBP = document.getElementById('eggB').value
+            var dFeesP = document.getElementById('dFees').value
+            document.getElementById('prices').value = (Math.floor(eggWP)*geteggWp) + (Math.floor(eggBP)*geteggBp) + (Math.floor(eggRP)*geteggRp) + (Math.floor(dFeesP))
+          }
+          document.getElementById('orderNum').value = getTest
+
+          document.getElementById('eggWop').value = geteggWp
+          document.getElementById('eggRop').value = geteggRp
+          document.getElementById('eggBop').value = geteggBp
+
+        </script>
+    </body>
+    <!-- //Body -->
+
+
+    <%- include('./partials/footer'); -%>
+
+</html>

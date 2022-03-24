@@ -1,0 +1,118 @@
+
+<html lang="en" dir="ltr">
+<head>
+<title>Basic 90</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<link rel="stylesheet" href="styles/styles.css" type="text/css">
+<link rel="stylesheet" href="styles/prices.css" type="text/css">
+<link rel="stylesheet" href="styles/orders.css" type="text/css">
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+  <%- include('./partials/header'); -%>
+<!-- content -->
+<div class="wrapper row2">
+
+  <div id="container" class="clear">
+    
+    <!-- Slider -->
+    <section id="slider" class="clear">
+      <figure>
+        <figcaption>
+          <h2>Orders</h2>
+          <p>A quick overview of the status do the orders at the moment </p>
+          <footer class="more"><a href="">Read More &raquo;</a></footer>
+        </figcaption>
+      </figure>
+      <article class="two_quarter">
+        <figure>
+          <figcaption2>
+            <ul class="clear">
+              <div class="ordering" >
+                <div class="[ order-option order-option--low ]">
+                  <div class="order-option__detail">
+                    <span class="order-option__cost">Completed</span>
+                    <span class="order-option__type"><%- orCo%></span>
+                  </div>
+                  <a href="orders" class="order-option__purchase">More ></a>
+                </div>
+                <div class="[ order-option order-option--low ]">
+                  <div class="order-option__detail">
+                    <span class="order-option__cost">Pending</span>
+                    <span class="order-option__type"><%- orP%></span>
+                  </div>
+                  <a href="orders" class="order-option__purchase">More ></a>
+                </div>
+                <div class="[ order-option order-option--high ]">
+                  <div class="order-option__detail">
+                    <span class="order-option__cost">Ready</span>
+                    <span class="order-option__type"><%- orR%></span>
+                  </div>
+                  <a href="orders" class="order-option__purchase">More ></a>
+                </div>
+                                <div class="[ order-option order-option--high ]">
+                  <div class="order-option__detail">
+                    <span class="order-option__cost">Cancelled</span>
+                    <span class="order-option__type"><%- orCa%></span>
+                  </div>
+                  <a href="orders" class="order-option__purchase">More ></a>
+                </div>
+              </div>
+          </figcaption2>
+        </figure>
+      </article>
+    </section>
+    <!-- main content -->
+    <div id="intro">
+      <section class="clear">
+        <!-- article 1 -->
+        <article class="two_quarter">
+          <h2>Overview of Products/Prices</h2>
+          <p>A quick overview of the current prices</p>
+        </article>
+        <!-- article 2 -->
+        <article class="two_quarter lastbox">
+          <figure>
+            <ul class="clear">
+              <div class="pricing">
+                <div class="[ price-option price-option--low ]">
+                  <div class="price-option__detail">
+                    <span class="price-option__cost"><%= prices.eggRp %> EGP</span>
+                    <span class="price-option__type">بيض احمر</span>
+                  </div>
+                  <a href="prices" class="price-option__purchase">More ></a>
+                </div>
+                <div class="[ price-option price-option--mid ]">
+                  <div class="price-option__detail">
+                    <span class="price-option__cost"><%= prices.eggWp%> EGP</span>
+                    <span class="price-option__type">بيض ابيض</span>
+                  </div>
+                  <a href="prices" class="price-option__purchase">More ></a>
+                </div>
+                <div class="[ price-option price-option--high ]">
+                  <div class="price-option__detail">
+                    <span class="price-option__cost"><%= prices.eggBp%> EGP</span>
+                    <span class="price-option__type">بيض بلدي</span>
+                  </div>
+                  <a href="prices" class="price-option__purchase">More ></a>
+                </div>
+              </div>
+            <figcaption><a href="">View More In The Inventory &raquo;</a></figcaption>
+          </figure>
+        </article>
+      </section>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    
+    <!-- / content body -->
+  </div>
+</div>
+<!-- Footer -->
+<%- include('./partials/footer'); -%>
+
+</html>
