@@ -10,7 +10,7 @@ const app = express();
 const dbURI = "mongodb+srv://UserOrganic:UserOrganic@cluster0.0sezk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const port = process.env.PORT || 5000
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(result => app.listen(port), console.log("connected to db"))
+  .then(result => app.listen(port), console.log("connected to db, on port 5000"))
   .catch(err => console.log(err));
 
 // register view engine
